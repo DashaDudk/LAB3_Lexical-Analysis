@@ -1,0 +1,24 @@
+#include <iostream>
+
+int sumOfSquares(int n) {
+    int sum = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        sum += i * i; 
+    }
+
+    return sum;
+}
+
+int main() {
+    int n;
+
+    std::cout << "Enter n: ";
+    std::cin >> n;
+
+    int result = sumOfSquares(n);
+
+    std::cout << "Sum of squares of first " << n << " numbers: " << result << std::endl;
+
+    return 0;
+}
